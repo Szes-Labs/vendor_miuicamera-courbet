@@ -13,7 +13,7 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(strip $(TARGET_USES_STOCK_MIUICAMERA)),true)
     $(warning Building with Stock MiuiCamera)
-    PRODUCT_PACKAGES += MiuiCamera_Leica_Holy_4_5
+    PRODUCT_PACKAGES += MiuiCamera
 endif
 
 ifeq ($(strip $(TARGET_USES_LEICA_HOLY45)),true)
@@ -25,6 +25,6 @@ endif
 ifneq ($(or \
     $(TARGET_USES_STOCK_MIUICAMERA), \
     $(TARGET_USES_LEICA_HOLY45)),true)
-    $(warning No TARGET_USES_* camera flag set — defaulting to Leica Camera)
-    PRODUCT_PACKAGES += MiuiCamera_Leica_Holy_4_5
+    $(warning No TARGET_USES_* camera flag set — defaulting to Miui Camera)
+    PRODUCT_PACKAGES += MiuiCamera
 endif
