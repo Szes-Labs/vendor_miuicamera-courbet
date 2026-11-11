@@ -17,7 +17,7 @@ ifeq ($(strip $(TARGET_USES_MIUICAMERA)),true)
 endif
 
 ifeq ($(strip $(TARGET_USES_LEICA_)),true)
-    $(warning Building with Leica Camera Holy 4.5)
+    $(warning Building with Leica Camera)
     PRODUCT_PACKAGES += MiuiCamera_Leica_Holy_4_5
 endif
 
